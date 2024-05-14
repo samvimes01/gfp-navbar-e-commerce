@@ -1,0 +1,11 @@
+#root {
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
