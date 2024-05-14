@@ -6,7 +6,7 @@ import NavLinks from "./NavLinks";
 function NavMobMenu({ onClose }: { onClose: () => void }) {
   return (
     <div
-      className="w-full h-screen bg-neutral-950/70 z-10 absolute"
+      className="w-full h-screen bg-neutral-950/70 z-10 absolute top-0"
       onClick={onClose}
     >
       <div

@@ -22,6 +22,7 @@ body {
     sans-serif;
   min-height: 100vh;
   background: var(--color-background);
+  position: relative;
 }
 
 *,

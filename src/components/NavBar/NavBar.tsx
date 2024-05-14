@@ -5,6 +5,7 @@ import IconLogo from "../Icons/IconLogo";
 import IconMenu from "../Icons/IconMenu";
 import NavLinks from "./NavLinks";
 import NavMobMenu from "./NavMobMenu";
+import { createPortal } from "react-dom";
 
 function NavBar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -27,7 +28,8 @@ function NavBar() {
           </span>
         </span>
       </div>
-      {isMenuOpen && <NavMobMenu onClose={toggleMenu} />}
+      {isMenuOpen &&
+        createPortal(<NavMobMenu onClose={toggleMenu} />, document.body)}
     </>
   );
 }
